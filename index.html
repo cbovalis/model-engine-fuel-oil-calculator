@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Model Airplane Engines - Fuel Oil Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Fuel Oil Calculator</h1>
+      <hr />
+      <div id="fuel_data">
+        <div>
+          <label>Starting fuel container: </label>
+          <select id="starting_fuel_container" name="starting_fuel_container">
+            <option value="one_gallon" selected> 1 Gallon </option>
+            <option value="half_gallon"> 1/2 Gallon </option>
+            <option value="quart"> 1 Quart </option>
+            <option value="pint"> 1 Pint </option>
+          </select>
+        </div>
+
+        <div>
+          <label>Existing Oil Percentage (%): </label>
+          <input
+            type="number"
+            min="16"
+            max="23"
+            step="1"
+            value="16"
+            id="current_oil_percentage"
+          />
+        </div>
+
+        <div>
+          <label>Desired Oil Percentage (%): </label>
+          <input
+            type="number"
+            min="20"
+            max="29"
+            step="1"
+            value="20"
+            id="desired_oil_percentage"
+          />
+        </div>
+
+        <div>
+          <button type="button" class="my_button" onclick="calculateOil()">
+            Calculate Additional Oil Needed
+          </button>
+        </div>
+      </div>
+      <!-- #fuel_data -->
+
+      <div id="calculated_Oil">
+        <label>Additional Oil needed: </label><span id="oil_needed"></span>
+      </div>
+    </div>
+    <!-- #container -->
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

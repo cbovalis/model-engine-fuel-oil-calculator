@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.2em;
+  line-height: 2em;
+  background-color: darkgreen;
+}
+
+h1 {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.3em;
+}
+
+input,
+label,
+button {
+  display: inline-block;
+}
+
+.my_button {
+  font-size: 0.7em;
+  padding: 0.5em;
+  border-radius: 10px;
+  background-color: darkred;
+  color: white;
+}
+
+#container {
+  max-width: 300px;
+  margin: 25px auto;
+  padding: 25px;
+  border: 3px solid #333;
+  border-radius: 20px;
+  background-color: gold;
+  opacity: 0.9;
+}
+
+#calculated_Oil {
+  font-style: oblique;
+  font-weight: 500;
+}
+
+input,
+select {
+  font-size: 0.8em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#oil_needed {
+  margin-left: 20px;
+  color: darkgreen;
+}
+
+@media (min-width: 700px) {
+  body {
+    background: url(../images/stunt_flyers.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  #container {
+    max-width: 450px;
+    margin: 40px auto;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
